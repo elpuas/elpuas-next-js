@@ -19,6 +19,7 @@ export default function Index({ allPosts: { edges }, preview }) {
         </Head>
         <Container>
           <Intro />
+          {console.log('HEROPOST', heroPost )}
           {heroPost && (
             <HeroPost
               title={heroPost.title}
