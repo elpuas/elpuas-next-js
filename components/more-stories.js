@@ -1,6 +1,6 @@
 import PostPreview from '../components/post-preview'
 
- // If preview is not setup, this will cause the App to fail.
+ // This Component is failing, this will cause the App to fail.
 export default function MoreStories({ posts }) {
   return (
     <section>
@@ -8,7 +8,7 @@ export default function MoreStories({ posts }) {
         More Stories
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
-        {/* {posts.map(({ node }) => (
+        {posts.map(({ node }) => (
           <PostPreview
             key={node.slug}
             title={node.title}
@@ -18,7 +18,7 @@ export default function MoreStories({ posts }) {
             slug={node.slug}
             excerpt={node.excerpt}
           />
-        ))} */}
+        ))}
       </div>
     </section>
   )

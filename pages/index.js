@@ -19,7 +19,6 @@ export default function Index({ allPosts: { edges }, preview }) {
         </Head>
         <Container>
           <Intro />
-          {console.log('HEROPOST', heroPost )}
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -30,7 +29,7 @@ export default function Index({ allPosts: { edges }, preview }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </Container>
       </Layout>
     </>

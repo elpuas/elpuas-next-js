@@ -41,6 +41,8 @@ export default function Post({ post, posts, preview }) {
               </Head>
               <PostHeader
                 title={post.title}
+                // It seems that to be able to work correctly you must provide a feature image on your posts
+                // @TODO add conditional to fix it.
                 coverImage={post.featuredImage.node}
                 date={post.date}
                 author={post.author.node}
