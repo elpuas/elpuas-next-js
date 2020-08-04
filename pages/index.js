@@ -19,6 +19,7 @@ export default function Index({ allPosts: { edges }, preview }) {
         </Head>
         <Container>
           <Intro />
+          <h1 className="rounded-full bg-indigo-500 text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 text-indigo-100 p-10 mt-10 mb-10 text-center">This is the Index Page</h1>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
