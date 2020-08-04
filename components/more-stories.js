@@ -1,6 +1,5 @@
 import PostPreview from '../components/post-preview'
 
- // This Component is failing, this will cause the App to fail.
 export default function MoreStories({ posts }) {
   return (
     <section>
@@ -12,7 +11,7 @@ export default function MoreStories({ posts }) {
           <PostPreview
             key={node.slug}
             title={node.title}
-            coverImage={node.featuredImage.node}
+            coverImage={node.featuredImage ? node.featuredImage.node : null}
             date={node.date}
             author={node.author.node}
             slug={node.slug}
