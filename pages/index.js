@@ -22,7 +22,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           {heroPost && (
             <HeroPost
               title={heroPost.title}
-              coverImage={heroPost.featuredImage.node}
+              coverImage={heroPost.featuredImage ? heroPost.featuredImage.node : null}
               date={heroPost.date}
               author={heroPost.author.node}
               slug={heroPost.slug}

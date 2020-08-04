@@ -41,7 +41,7 @@ export default function Post({ post, posts, preview }) {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.featuredImage ? post.featuredImage.node : null }
+                coverImage={post.featuredImage ? post.featuredImage.node : null}
                 date={post.date}
                 author={post.author.node}
                 categories={post.categories}
